@@ -348,18 +348,18 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
 ## Authors
 
 <details>
-    <summary>Ismaila Lawal Elijah</summary>
+    <summary>Olivier Collins ITANGISHAKA</summary>
     <ul>
-    <li><a href="https://www.github.com/ElijahLawal-7">Github</a></li>
-    <li><a href="https://www.linkedin.com/in/elijah-lawal-18aa101bb">LinkedIn</a></li>
-    <li><a href="mailto:lawalelijah50@gmail.com@gmail.com">E-mail</a></li>
+    <li><a href="https://www.github.com/paroteen">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/olivier-itangishaka-7ab92a200/">LinkedIn</a></li>
+    <li><a href="mailto:xx@gmail.com@gmail.com">E-mail</a></li>
     </ul>
 </details>
 <details>
-    <summary>Bridget Freedom</summary>
+    <summary>ERNESTE Ntezirizaza</summary>
     <ul>
-    <li><a href="https://www.github.com/freedombridget">Github</a></li>
-    <li><a href="mailto:freedombridget0@gmail.com@gmail.com">E-mail</a></li>
+    <li><a href="https://www.github.com/">Github</a></li>
+    <li><a href="mailto:ernesteemail.com@gmail.com">E-mail</a></li>
     </ul>
 </details>
 

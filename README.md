@@ -348,18 +348,18 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
 ## Authors
 
 <details>
-    <summary>Olivier Collins ITANGISHAKA</summary>
+    <summary>Erneste Ntezirizaza</summary>
     <ul>
-    <li><a href="https://www.github.com/paroteen">Github</a></li>
-    <li><a href="https://www.linkedin.com/in/olivier-itangishaka-7ab92a200/">LinkedIn</a></li>
-    <li><a href="mailto:xx@gmail.com@gmail.com">E-mail</a></li>
+    <li><a href="https://github.com/ernesteNtezirizaza">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/erneste-ntezirizaza-25966b181">LinkedIn</a></li>
+    <li><a href="mailto:erneste.ntezirizaza@gmail.com">E-mail</a></li>
     </ul>
 </details>
 <details>
-    <summary>ERNESTE Ntezirizaza</summary>
+    <summary>Olivier Itangishaka</summary>
     <ul>
-    <li><a href="https://www.github.com/">Github</a></li>
-    <li><a href="mailto:ernesteemail.com@gmail.com">E-mail</a></li>
+    <li><a href="https://github.com/paroteen">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/olivier-itangishaka-7ab92a200">LinkedIn</a></li>
+    <li><a href="mailto:o.itangisha@alustudent.com">E-mail</a></li>
     </ul>
 </details>
-

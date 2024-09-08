@@ -4,7 +4,8 @@ from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """Represent a review.
+    
+    """Represent a review model with the folowing attributes.
 
     Attributes:
         place_id (str): The Place id.

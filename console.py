@@ -12,8 +12,7 @@ from models.place import Place
 from models.amenity import Amenity
 from models.review import Review
 
-
-""" This is our console module that will be used to interact with our storage engine. It will allow us to create, update, destroy, and show instances of our classes. """
+"""This is our console module"""
 
 def parse(arg):
     curly_braces = re.search(r"\{(.*?)\}", arg)

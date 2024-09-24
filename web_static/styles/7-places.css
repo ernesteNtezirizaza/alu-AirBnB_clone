@@ -1,27 +1,32 @@
 .places {
-    text-align: center;
-    margin: 0;
-}
-.places h1 {
-    font-size: 30px;
-    vertical-align: top;
-    text-align: left;
-    padding: 25px 0 0 30px;
-    margin: 0;
+	display: block;
+	margin: 45px auto;
+	text-align: center;
 }
 
-.places article {
-    width: 390px;
-    padding: 20px;
-    margin: 20px;
-    border: #FF5A5F solid 1px;
-    border-radius: 4px;
-    display: inline-block;
-    position: relative;
-
+article {
+	display: inline-block;
+	width: 390px;
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid #FF5A5F;
+	border-radius: 4px;
+	text-align: center;
 }
 
-.places h2 {
-    font-size: 30px;
-    text-align: center;
+h1 {
+	float: left;
+	text-align: left;
+	width: 95%;
+	display: block;
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	font-size: 30px;
+}
+
+article h2 {
+	font-size: 30px;
+	padding: 0px;
+	margin: auto;
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBNB</title>
+</head>
+<body>
+	{% if mode == 'all' %}
+		<h1>States</h1>
+        <ul>
+        {% for state in states.values()|sort(attribute='name') %}
+            <li>{{ state.id }}: <b>{{ state.name }}</b></li>
+        {% endfor %}
+        </ul>
+
+	{% elif mode == 'one' %}
+		<h1>State: {{ states.name }}</h1>
+		<h3>Cities:</h3>
+		<ul>
+		{% for city in states.cities|sort(attribute="name") %}
+			<li>{{ city.id }}: <b>{{ city.name }}</b></li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<h1>Not found!</h1>
+	{% endif %}
+    </body>
+</html>

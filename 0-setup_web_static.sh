@@ -1,27 +1,45 @@
 #!/usr/bin/env bash
 # script that sets up web servers for the deployment of web_static
+
+# Update package lists
 sudo apt-get update
-sudo apt-get -y install nginx
+
+# Install Nginx if it is not already installed
+if ! dpkg -l | grep -q nginx; then
+    sudo apt-get -y install nginx
+fi
+
+# Allow 'Nginx HTTP' through UFW
 sudo ufw allow 'Nginx HTTP'
 
-sudo mkdir -p /data/
-sudo mkdir -p /data/web_static/
-sudo mkdir -p /data/web_static/releases/
-sudo mkdir -p /data/web_static/shared/
-sudo mkdir -p /data/web_static/releases/test/
+# Create necessary directories if they do not exist
+sudo mkdir -p /data/web_static/releases/test
+sudo mkdir -p /data/web_static/shared
+
+# Create a fake HTML file in /data/web_static/releases/test/
 sudo touch /data/web_static/releases/test/index.html
-sudo echo "<html>
+echo "<html>
   <head>
   </head>
   <body>
     Holberton School
   </body>
-</html>" | sudo tee /data/web_static/releases/test/index.html
+</html>" | sudo tee /data/web_static/releases/test/index.html > /dev/null
 
-sudo ln -s -f /data/web_static/releases/test/ /data/web_static/current
+# Remove the symbolic link if it exists and recreate it
+sudo rm -f /data/web_static/current
+sudo ln -s /data/web_static/releases/test /data/web_static/current
 
+# Give ownership of /data/ to the ubuntu user and group recursively
 sudo chown -R ubuntu:ubuntu /data/
 
-sudo sed -i '/listen 80 default_server/a location /hbnb_static { alias /data/web_static/current/;}' /etc/nginx/sites-enabled/default
+# Update Nginx configuration to serve content from /data/web_static/current/
+if ! grep -q "location /hbnb_static" /etc/nginx/sites-enabled/default; then
+    sudo sed -i '/listen 80 default_server/a location /hbnb_static { alias /data/web_static/current/;}' /etc/nginx/sites-enabled/default
+fi
 
+# Restart Nginx to apply the changes
 sudo service nginx restart
+
+# Exit successfully
+exit 0

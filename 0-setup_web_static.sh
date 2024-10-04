@@ -2,7 +2,7 @@
 # script that sets up web servers for the deployment of web_static
 
 # Update package lists
-sudo apt-get update
+sudo apt-get update -y
 
 # Install Nginx if it is not already installed
 if ! dpkg -l | grep -q nginx; then
@@ -17,7 +17,6 @@ sudo mkdir -p /data/web_static/releases/test
 sudo mkdir -p /data/web_static/shared
 
 # Create a fake HTML file in /data/web_static/releases/test/
-sudo touch /data/web_static/releases/test/index.html
 echo "<html>
   <head>
   </head>
@@ -41,5 +40,5 @@ fi
 # Restart Nginx to apply the changes
 sudo service nginx restart
 
-# Exit successfully
+# Ensure the script exits successfully
 exit 0
